@@ -3,21 +3,21 @@ import cross from '../assets/cross.png'
 import circle from '../assets/i.webp'
 import { useTurn } from "../Context";
 
-interface props{
-    value?: string | null,
-    onValueChange: (onChange:string | null | undefined, turn:string) => void,
-    pos: number,
-    onClick?: () => string,
-}
+// interface props{
+//     value?: string | null,
+//     onValueChange?: (onChange:string | null | undefined, turn:string) => void,
+//     pos: number,
+//     onClick?: () => string,
+// }
 
-function Place (props:props){
+function Place (){
     const [img, setImg] = useState<string>('')
     const {turn, setTurn, flag, setFlag} = useTurn();
 
     const setPlace = () => {
             if (img == ''){
                 setImg(turn === 'x' ? cross : circle); 
-                props.onValueChange( props.value ,turn),
+                // props.onValueChange( props.value ,turn),
                 setTurn(turn === 'x' ? 'o' : 'x');}
     }
 

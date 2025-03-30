@@ -40,7 +40,7 @@ export const Provider = ({ children }: ProviderProps) => {
     setTurn(newTurn);
   }, [setTurn]);
 
-  const updateFlag = useCallback((newFlag: boolean) =>{
+  const updateFlag = useCallback(() =>{
     setFlag(prevFlag => !prevFlag);
   }, [setFlag])
 

@@ -6,9 +6,9 @@ interface Props{}
 
 const Field:React.FC<Props> = () => {
 
-    const handleValue = (onChange:string | null| undefined,newValue:string) => {
-        onChange = newValue; 
-    }
+    // const handleValue = (onChange:string | null| undefined,newValue:string) => {
+    //     onChange = newValue; 
+    // }
 
     // function caclulateWinner():void{
     //     const lines:number[][] = [
@@ -33,15 +33,15 @@ const Field:React.FC<Props> = () => {
 
     return(
         <div className="field">
-            <Place pos={1} value={null} onValueChange={handleValue}/>
-            <Place pos={2} value={null} onValueChange={handleValue}/>
-            <Place pos={3} value={null} onValueChange={handleValue}/>
-            <Place pos={4} value={null} onValueChange={handleValue}/>
-            <Place pos={5} value={null} onValueChange={handleValue}/>
-            <Place pos={6} value={null} onValueChange={handleValue}/>
-            <Place pos={7} value={null} onValueChange={handleValue}/>
-            <Place pos={8} value={null} onValueChange={handleValue}/>
-            <Place pos={9} value={null} onValueChange={handleValue}/>
+            <Place/>
+            <Place/>
+            <Place/>
+            <Place/>
+            <Place/>
+            <Place/>
+            <Place/>
+            <Place/>
+            <Place/>
         </div>
     )
 }
